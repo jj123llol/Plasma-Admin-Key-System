@@ -1,6 +1,6 @@
 const key = "This Is A Test Key"
 
-if (document.referrer == "https://google.com/"){
+if (document.referrer == ""){
   navigator.clipboard.writeText(key)
   alert('copied to clipboard!\n' + key);
 }else{
