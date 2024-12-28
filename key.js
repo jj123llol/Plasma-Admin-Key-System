@@ -1,4 +1,6 @@
-const key = "This Is A Test Key"
+const prams = new URLSearchParams(window.location.search)
+const hwid = prams.get("HWID")
+const key = hwid + "This Is A Test Key"
 
 if (document.referrer == ""){
   navigator.clipboard.writeText(key)
