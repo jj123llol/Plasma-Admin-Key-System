@@ -1,6 +1,7 @@
 const key = "This Is A Test Key"
+const ref = document.referrer
 
-if (document.referrer == ""){
+if (ref.includes("https://tpi")){
    navigator.clipboard.writeText(key)
    alert('copied to clipboard!\n' + key);
 }else{
