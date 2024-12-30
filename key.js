@@ -1,4 +1,4 @@
-const key = "This Is A Test Key"
+const key = "ASDGFSDFG"
 const ref = document.referrer
 
 if (ref.includes("https://tpi")){
